@@ -1,15 +1,20 @@
-# resume
+# Helen Chong's Résumé
 
-To install dependencies:
+Helen Chong's résumé. Built with Eleventy.
 
-```bash
-bun install
-```
+## Run Locally
+Recommended JavaScript runtime: [Bun](https://bun.sh).
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+1. Clone this repository locally
+    ```
+    git clone https://github.com/helenclx/resume.git
+    ```
+1. Install dependencies
+    ```
+    bun install
+    ```
+1. Run the project
+    ```
+    bun run start
+    ```
+1. Open http://localhost:8080/ in your browser

@@ -6,12 +6,10 @@ export default function(eleventyConfig) {
 
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-    eleventyConfig.addFilter("dateToFormat", (date) => {
-        const dateFormat = "LLLL yyyy";
-        if (typeof date === "object") {
-            return DateTime.fromJSDate(date).toFormat(dateFormat);
-        }
-        return DateTime.fromISO(date, { setZone: true }).toFormat(dateFormat);
+    eleventyConfig.addFilter("dateToFormat", (date, format) => {
+        return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(
+            String(format)
+        )
     });
 
     return {

@@ -1,4 +1,4 @@
-export const author = "Helen Chong";
+export const name = "Helen Chong";
 export const occupation = "Full-Stack WordPress Developer";
 export const location = "Malaysia";
 export const profilePic = "profilepic.avif";

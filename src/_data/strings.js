@@ -3,7 +3,8 @@ export const titles = {
     education: "Education",
     skills: "Skills",
     languages: "Languages",
-    projects: "Featured Projects"
+    projects: "Featured Projects",
+    tech: "Technologies"
 };
 
 export const labels = {

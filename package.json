@@ -2,6 +2,11 @@
   "name": "resume",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "bunx eleventy --serve --quiet",
+    "build": "bunx eleventy",
+    "build-ghpages": "bunx eleventy"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

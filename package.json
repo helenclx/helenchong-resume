@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0-alpha.20"
+  }
+}

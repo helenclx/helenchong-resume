@@ -6,3 +6,4 @@ export const author = "Helen Chong";
 export const title = "Résumé of " + author;
 export const themeColor = "#fffbeb";
 export const backgroundColor = "#451a03";
+export const buildTimestamp = new Date();

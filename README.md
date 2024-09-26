@@ -18,3 +18,7 @@ Recommended JavaScript runtime: [Bun](https://bun.sh).
     bun run start
     ```
 1. Open http://localhost:8080/ in your browser
+
+## Credits
+
+[Max Böck](https://github.com/maxboeck/resume) and [Gurpreet Singh](https://github.com/learnwithgurpreet/11ty-resume-template)'s Eleventy résumé templates for the inspiration.

@@ -27,6 +27,12 @@ layout: layouts/base
         {% include "partials/projects.njk" %}
     </section>
 
+    <section class="section" id="section-certification"></section>
+        <h2 class="section__title">{{ strings.titles.certifications }}</h2>
+        {% set entries = collections.certifications %}
+        {% include "partials/certifications.njk" %}
+    </section>
+
     <section class="section" id="section-education">
         <h2 class="section__title">{{ strings.titles.education }}</h2>
         {% set entries = collections.education %}

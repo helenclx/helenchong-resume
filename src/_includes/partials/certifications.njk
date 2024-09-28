@@ -1,6 +1,6 @@
 {% if collections.certifications.length %}
-<ol class="certlist">
-{% for cert in collections.certifications %}
+<ol class="certlist" reversed>
+{% for cert in collections.certifications | reverse %}
     <li class="certlist__item">
     {% if cert.data.url %}
         <h3 class="certlist__title"><a href="{{ cert.data.url }}">{{ cert.data.title }}</a></h3>

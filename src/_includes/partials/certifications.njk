@@ -1,0 +1,17 @@
+{% if collections.certifications.length %}
+<ol class="certlist">
+{% for cert in collections.certifications %}
+    <li class="certlist__item">
+    {% if cert.data.url %}
+        <h3 class="certlist__title"><a href="{{ cert.data.url }}">{{ cert.data.title }}</a></h3>
+    {% else %}
+        <h3 class="certlist__title">{{ cert.data.title }}</h3>
+    {% endif %}
+        <time datetime="{{ cert.data.date | dateToFormat("yyyy-MM-dd") }}">
+            {{ cert.data.date | dateToFormat("d LLLL yyyy") }}
+        </time>
+        <p>{{ cert.data.organization }}</p>
+    </li>
+{% endfor %}
+</ol>
+{% endif %}

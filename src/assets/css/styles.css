@@ -3,6 +3,9 @@
 /* ------------------- */
 :root {
     --clr-body-bg: #fffbeb;
+
+    --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    --ff-headings: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
 }
 
 /* ------------------- */
@@ -70,7 +73,10 @@ textarea:not([rows]) { min-height: 10em; }
 /* General */
 body {
     background-color: var(--clr-body-bg);
+    font-family: var(--ff-regular);
 }
+
+h1, h2, h3 { font-family: var(--ff-headings); }
 
 /* Components */
 .inline-icon > svg {

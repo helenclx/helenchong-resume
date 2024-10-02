@@ -8,9 +8,16 @@
     --clr-link-hover: #ba4817;
     --clr-accent-1: #fef3c7;
     --clr-accent-2: #fabe25;
+    --clr-entry-bdr: #818a91;
+    --clr-entry-dot: #fc6767;
 
     --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     --ff-headings: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+
+    --fs-vcard: 1.1rem;
+    --fs-vcard-name: 3rem;
+    --fs-vcard-pronouns: 1.125rem;
+    --fs-entry-title: 1.5rem;
 
     --sz-width-padding: 5%;
 }
@@ -126,7 +133,7 @@ a:hover { color: var(--clr-link-hover); }
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-size: 1.1rem;
+    font-size: var(--fs-vcard);
 }
 
 .vcard__title {
@@ -136,8 +143,8 @@ a:hover { color: var(--clr-link-hover); }
     gap: 0 0.5em;
 }
 
-.vcard__name { font-size: 3rem; }
-.vcard__pronouns { font-size: 1.125rem; }
+.vcard__name { font-size: var(--fs-vcard-name); }
+.vcard__pronouns { font-size: var(--fs-vcard-pronouns); }
 
 .vcard__occupation {
     font-weight: 400;
@@ -193,6 +200,62 @@ a:hover { color: var(--clr-link-hover); }
     flex-wrap: wrap;
     gap: 0.5em;
     padding-left: 0;
+}
+
+/* Entries */
+.entrylist, .entry, .entry__header {
+    display: grid;
+}
+
+.entrylist {
+    --list-item-top: 2.25rem;
+	position: relative;
+	padding-left: 1rem;
+    list-style: "";
+    gap: 2.5em;
+}
+
+.entrylist::before {
+	content: '';
+	display: block;
+	width: 1px;
+	background: var(--clr-entry-bdr);
+	background: linear-gradient(to top,rgba(129,138,145,0) 0,var(--clr-entry-bdr) 100px,var(--clr-entry-bdr) 100%);
+	position: absolute;
+	top: var(--list-item-top);
+	left: 1rem;
+	bottom: 0;
+}
+
+.entrylist__item {
+	position: relative;
+	padding-left: 2rem;
+}
+
+.entrylist__item::before {
+	content: '';
+	display: block;
+	width: .625rem;
+	height: .625rem;
+	border-radius: 50%;
+	background-color: var( --clr-entry-dot);
+	position: absolute;
+	top: var(--list-item-top);
+	left: 0;
+	transform: translate(-50%,0);
+}
+
+.entry__title { font-size: var(--fs-entry-title); }
+.entry { gap: 0.7em; }
+.entry__header { gap: 0.15em; }
+
+.entry__time {
+	opacity: 0.75;
+	font-size: .875rem;
+	letter-spacing: .125em;
+	text-transform: uppercase;
+	order: -1;
+	margin-bottom: .25rem;
 }
 
 /* Components */

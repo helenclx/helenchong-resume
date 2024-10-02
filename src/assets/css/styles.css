@@ -7,6 +7,7 @@
     --clr-link: #92350e;
     --clr-link-hover: #ba4817;
     --clr-accent-1: #fef3c7;
+    --clr-border: #fabe25;
 
     --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     --ff-headings: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
@@ -21,6 +22,7 @@
         --clr-link: #fabe25;
         --clr-link-hover: #d29f1f;
         --clr-accent-1: #78340f;
+        --clr-border: #d87607;
     }
 }
 
@@ -170,7 +172,9 @@ a:hover { color: var(--clr-link-hover); }
 
 .section__title {
     font-size: 2.5rem;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
+    padding-bottom: 0.15em;
+    border-bottom: 0.05em solid var(--clr-border);
 }
 
 .section__lead {
@@ -205,13 +209,14 @@ a:hover { color: var(--clr-link-hover); }
 @media only screen and (min-width: 1025px) {
     body {
         --grid-whitespace: max(min(160px, calc((100% - 1024px) / 2)), 20px);
+        padding-top: 5rem;
         grid-template-areas:
             '...... v-card resume ......'
             'footer footer footer footer';
         grid-template-columns: var(--grid-whitespace) 1fr 2fr var(--grid-whitespace);
     }
-
-    .vcard, .resume { padding-top: 5rem; }
+    .vcard, .resume { padding-top: 0; }
+    .vcard { border-right: 0.1em solid var(--clr-border); }
 }
 
 /* Media query for printing */

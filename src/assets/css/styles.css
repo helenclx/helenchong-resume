@@ -177,6 +177,11 @@ a { color: var(--clr-link); }
     margin-bottom: 0.5em;
 }
 
+.section__lead {
+    display: grid;
+    gap: 1em;
+}
+
 /* Components */
 .inline-icon > svg {
     display: inline-block;

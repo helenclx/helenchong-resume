@@ -52,9 +52,9 @@ layout: layouts/base
 {% if author.languages %}
     <section class="section" id="section-languages">
         <h2 class="section__title">{{ strings.titles.languages }}</h2>
-        <ul class="bulletlist">
+        <ul class="section__skills">
         {% for language in author.languages %}
-            <li class="p-skill">{{ language.name }} ({{ language.level }})</li>
+            <li class="section__skill p-skill">{{ language.name }} ({{ language.level }})</li>
         {% endfor %}
         </ul>
     </section>

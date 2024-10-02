@@ -3,9 +3,12 @@
 /* ------------------- */
 :root {
     --clr-body-bg: #fffbeb;
+    --clr-footer-bg: #fef3c7;
 
     --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     --ff-headings: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+
+    --sz-width-padding: 5%;
 }
 
 /* ------------------- */
@@ -74,9 +77,34 @@ textarea:not([rows]) { min-height: 10em; }
 body {
     background-color: var(--clr-body-bg);
     font-family: var(--ff-regular);
+    display: grid;
+    grid-template-areas:
+        'v-card'
+        'p-main'
+        'footer';
 }
 
 h1, h2, h3 { font-family: var(--ff-headings); }
+
+/* Layout */
+header, main, footer {
+    padding: 2em var(--sz-width-padding);
+}
+
+header {
+    grid-area: v-card;
+}
+
+main {
+    grid-area: p-main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--clr-footer-bg);
+    width: 100%;
+    text-align: center;
+}
 
 /* Components */
 .inline-icon > svg {
@@ -84,4 +112,13 @@ h1, h2, h3 { font-family: var(--ff-headings); }
     vertical-align: -10%;
     height: 0.9em;
     fill: currentColor;
+}
+
+/* Media query for larger screen sizes */
+@media only screen and (min-width: 1025px) {
+    body {
+        grid-template-areas:
+            'v-card p-main'
+            'footer footer';
+    }
 }

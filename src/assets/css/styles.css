@@ -114,7 +114,7 @@ footer {
     gap: 0 0.5em;
 }
 
-.vcard__name { font-size: 2.5rem; }
+.vcard__name { font-size: 3rem; }
 .vcard__pronouns { font-size: 1.125rem; }
 
 .vcard__avatar {
@@ -122,6 +122,10 @@ footer {
     border: 5px solid #fff;
     box-shadow: 8px 8px 40px -10px rgba(0,0,0,.3);
 }
+
+/* Sections */
+.section { font-size: 1.2rem; }
+.section__title { font-size: 2.5rem; }
 
 /* Components */
 .inline-icon > svg {

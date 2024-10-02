@@ -218,14 +218,14 @@ a { color: var(--clr-link); }
     html, body {
         width: 100%;
         min-height: 100%;
-        font-size: 10px !important;
+        font-size: 10px;
         overflow: visible;
     }
 
     body { display: block; }
     .vcard, .resume, footer { padding: 0; }
     .resume { padding: 1em 0; }
-    .footer { background: transparent !important; }
+    .footer { background: transparent; }
 
     .vcard__avatar {
         border: unset;

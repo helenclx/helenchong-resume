@@ -225,6 +225,8 @@ a { color: var(--clr-link); }
     }
 
     body { display: block; }
+    .vcard, .resume, footer { padding: 0; }
+    .resume { padding: 1em 0; }
     .footer { background: transparent !important; }
 
     .vcard__avatar {

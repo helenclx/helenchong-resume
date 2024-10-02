@@ -1,11 +1,11 @@
 {% if collections.certifications.length %}
-<ol class="certlist" reversed>
+<ol class="entrylist" reversed>
 {% for cert in collections.certifications | reverse %}
-    <li class="certlist__item">
+    <li class="entrylist__item">
     {% if cert.data.url %}
-        <h3 class="certlist__title"><a href="{{ cert.data.url }}">{{ cert.data.title }}</a></h3>
+        <h3 class="entry__title"><a href="{{ cert.data.url }}">{{ cert.data.title }}</a></h3>
     {% else %}
-        <h3 class="certlist__title">{{ cert.data.title }}</h3>
+        <h3 class="entry__title">{{ cert.data.title }}</h3>
     {% endif %}
         <time datetime="{{ cert.data.date | dateToFormat("yyyy-MM-dd") }}">
             {{ cert.data.date | dateToFormat("d LLLL yyyy") }}

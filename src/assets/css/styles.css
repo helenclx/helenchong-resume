@@ -213,9 +213,7 @@ a { color: var(--clr-link); }
 
 /* Media query for printing */
 @media print {
-    :root {
-        --clr-body-txt: #000;
-    }
+    :root { --clr-body-txt: #000; }
 
     html, body {
         width: 100%;

@@ -13,6 +13,7 @@
         <title>{{ sitemeta.title }}</title>
     </head>
     <body>
+        {% include "partials/header.njk" %}
         {{ content | safe }}
         {% include "partials/footer.njk" %}
     </body>

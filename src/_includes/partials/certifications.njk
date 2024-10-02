@@ -10,7 +10,8 @@
         <time datetime="{{ cert.data.date | dateToFormat("yyyy-MM-dd") }}">
             {{ cert.data.date | dateToFormat("d LLLL yyyy") }}
         </time>
-        <p>{{ cert.data.organization }}</p>
+        <span aria-hidden="true">&middot;</span>
+        <span>{{ cert.data.organization }}</span>
     </li>
 {% endfor %}
 </ol>

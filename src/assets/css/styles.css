@@ -104,7 +104,7 @@ a { color: var(--clr-link); }
 .vcard { grid-area: v-card; }
 .resume { grid-area: resume; }
 
-footer {
+.footer {
     grid-area: footer;
     background-color: var(--clr-footer-bg);
     width: 100%;

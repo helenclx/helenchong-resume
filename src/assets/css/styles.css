@@ -152,4 +152,6 @@ footer {
             '. footer footer .';
         grid-template-columns: var(--grid-whitespace) 1fr 2fr var(--grid-whitespace);
     }
+
+    header, main { padding-top: 5rem; }
 }

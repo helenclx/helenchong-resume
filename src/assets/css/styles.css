@@ -117,8 +117,10 @@ footer {
 /* Media query for larger screen sizes */
 @media only screen and (min-width: 1025px) {
     body {
+        --grid-whitespace: minmax(3%, 100px);
         grid-template-areas:
-            'v-card p-main'
-            'footer footer';
+            '. v-card p-main .'
+            '. footer footer .';
+        grid-template-columns: var(--grid-whitespace) 1fr 2fr var(--grid-whitespace);
     }
 }

@@ -7,7 +7,7 @@
     --clr-link: #92350e;
     --clr-link-hover: #ba4817;
     --clr-accent-1: #fef3c7;
-    --clr-border: #fabe25;
+    --clr-accent-2: #fabe25;
 
     --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     --ff-headings: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
@@ -22,7 +22,7 @@
         --clr-link: #fabe25;
         --clr-link-hover: #d29f1f;
         --clr-accent-1: #78340f;
-        --clr-border: #d87607;
+        --clr-accent-2: #d87607;
     }
 }
 
@@ -179,7 +179,7 @@ a:hover { color: var(--clr-link-hover); }
     font-size: 2.5rem;
     margin-bottom: 0.7em;
     padding-bottom: 0.15em;
-    border-bottom: 0.05em solid var(--clr-border);
+    border-bottom: 0.05em solid var(--clr-accent-2);
 }
 
 .section__lead {
@@ -221,7 +221,7 @@ a:hover { color: var(--clr-link-hover); }
         grid-template-columns: var(--grid-whitespace) 1fr 2fr var(--grid-whitespace);
     }
     .vcard, .resume { padding-top: 0; }
-    .vcard { border-right: 0.1em solid var(--clr-border); }
+    .vcard { border-right: 0.1em solid var(--clr-accent-2); }
 }
 
 /* Media query for printing */

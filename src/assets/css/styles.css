@@ -117,7 +117,7 @@ footer {
 /* Media query for larger screen sizes */
 @media only screen and (min-width: 1025px) {
     body {
-        --grid-whitespace: max(min(120px, calc((100% - 1024px) / 2)), 20px);
+        --grid-whitespace: max(min(160px, calc((100% - 1024px) / 2)), 20px);
         grid-template-areas:
             '. v-card p-main .'
             '. footer footer .';

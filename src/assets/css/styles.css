@@ -5,6 +5,7 @@
     --clr-body-bg: #fffbeb;
     --clr-body-txt: #000;
     --clr-link: #92350e;
+    --clr-link-hover: #ba4817;
     --clr-accent-1: #fef3c7;
 
     --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
@@ -18,6 +19,7 @@
         --clr-body-bg: #451a03;
         --clr-body-txt: #fffbeb;
         --clr-link: #fabe25;
+        --clr-link-hover: #d29f1f;
         --clr-accent-1: #78340f;
     }
 }
@@ -98,6 +100,7 @@ body {
 
 h1, h2, h3 { font-family: var(--ff-headings); }
 a { color: var(--clr-link); }
+a:hover { color: var(--clr-link-hover); }
 
 :focus {
     outline-offset: 0.15em;

@@ -237,7 +237,7 @@ a:hover { color: var(--clr-link-hover); }
 
     body { display: block; }
     .vcard, .resume, footer { padding: 0; }
-    .resume { padding: 1em 0; }
+    .resume { padding: 4em 0 2em; }
     .footer { background: transparent; }
 
     .vcard__avatar {

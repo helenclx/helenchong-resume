@@ -158,7 +158,6 @@ a { color: var(--clr-link); }
 /* Sections */
 .section {
     font-size: 1.2rem;
-    page-break-inside: avoid;
     padding-top: 2rem;
 	padding-bottom: 2rem;
 }
@@ -214,6 +213,20 @@ a { color: var(--clr-link); }
 
 /* Media query for printing */
 @media print {
+    :root {
+        --clr-body-txt: #000;
+    }
+
+    html, body {
+        width: 100%;
+        min-height: 100%;
+        font-size: 10px !important;
+        overflow: visible;
+    }
+
+    body { display: block; }
+    .footer { background: transparent !important; }
+
     .vcard__avatar {
         border: unset;
         box-shadow: unset;

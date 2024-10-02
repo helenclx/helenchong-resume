@@ -3,12 +3,23 @@
 /* ------------------- */
 :root {
     --clr-body-bg: #fffbeb;
+    --clr-body-txt: #000;
+    --clr-link: #92350e;
     --clr-footer-bg: #fef3c7;
 
     --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     --ff-headings: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
 
     --sz-width-padding: 5%;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-body-bg: #451a03;
+        --clr-body-txt: #fffbeb;
+        --clr-link: #fabe25;
+        --clr-footer-bg: #78340f;
+    }
 }
 
 /* ------------------- */
@@ -76,6 +87,7 @@ textarea:not([rows]) { min-height: 10em; }
 /* General */
 body {
     background-color: var(--clr-body-bg);
+    color: var(--clr-body-txt);
     font-family: var(--ff-regular);
     display: grid;
     grid-template-areas:
@@ -85,6 +97,7 @@ body {
 }
 
 h1, h2, h3 { font-family: var(--ff-headings); }
+a { color: var(--clr-link); }
 
 /* Layout */
 header, main, footer {
@@ -148,8 +161,8 @@ footer {
     body {
         --grid-whitespace: max(min(160px, calc((100% - 1024px) / 2)), 20px);
         grid-template-areas:
-            '. v-card p-main .'
-            '. footer footer .';
+            '...... v-card p-main ......'
+            'footer footer footer footer';
         grid-template-columns: var(--grid-whitespace) 1fr 2fr var(--grid-whitespace);
     }
 

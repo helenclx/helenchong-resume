@@ -1,7 +1,9 @@
 /* ------------------- */
 /* Custom Properties   */
 /* ------------------- */
-:root
+:root {
+    --clr-body-bg: #fffbeb;
+}
 
 /* ------------------- */
 /* CSS Reset           */
@@ -65,6 +67,12 @@ textarea:not([rows]) { min-height: 10em; }
 /* STYLING BEGINS      */
 /* ------------------- */
 
+/* General */
+body {
+    background-color: var(--clr-body-bg);
+}
+
+/* Components */
 .inline-icon > svg {
     display: inline-block;
     vertical-align: -10%;

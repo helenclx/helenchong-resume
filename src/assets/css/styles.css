@@ -9,7 +9,7 @@
     --clr-accent-1: #fef3c7;
     --clr-accent-2: #fabe25;
     --clr-entry-bdr: #818a91;
-    --clr-entry-dot: #fc6767;
+    --clr-list-bullet: #fc6767;
 
     --ff-regular: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     --ff-headings: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
@@ -238,7 +238,7 @@ a:hover { color: var(--clr-link-hover); }
 	width: .625rem;
 	height: .625rem;
 	border-radius: 50%;
-	background-color: var( --clr-entry-dot);
+	background-color: var( --clr-list-bullet);
 	position: absolute;
 	top: var(--list-item-top);
 	left: 0;
@@ -257,6 +257,9 @@ a:hover { color: var(--clr-link-hover); }
 	order: -1;
 	margin-bottom: .25rem;
 }
+
+.bulletlist li::marker,
+.markdown li::marker { color: var(--clr-list-bullet); }
 
 /* Components */
 .inline-icon > svg {

@@ -5,10 +5,10 @@
     </div>
     <h2 class="p-job-title">{{ author.occupation }}</h2>
 
-    {% if author.profilePic %}
-        {%- set profilePicUrl -%}./assets/img/{{ author.profilePic }}{% endset %}
-        <img class="vcard__avatar u-photo" src="{{ profilePicUrl }}" width="160" height="160" alt="Profile picture of {{ author.name }}">
-    {% endif %}
+{% if author.profilePic %}
+    {%- set profilePicUrl -%}./assets/img/{{ author.profilePic }}{% endset %}
+    <img class="vcard__avatar u-photo" src="{{ profilePicUrl }}" width="160" height="160" alt="Profile picture of {{ author.name }}">
+{% endif %}
 
     <div class="vcard__location">
         <span aria-hidden="true">

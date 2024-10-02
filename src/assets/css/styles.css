@@ -92,7 +92,7 @@ body {
     display: grid;
     grid-template-areas:
         'v-card'
-        'p-main'
+        'resume'
         'footer';
 }
 
@@ -100,17 +100,9 @@ h1, h2, h3 { font-family: var(--ff-headings); }
 a { color: var(--clr-link); }
 
 /* Layout */
-header, main, footer {
-    padding: 2em var(--sz-width-padding);
-}
-
-header {
-    grid-area: v-card;
-}
-
-main {
-    grid-area: p-main;
-}
+.vcard, .resume, footer { padding: 2em var(--sz-width-padding); }
+.vcard { grid-area: v-card; }
+.resume { grid-area: resume; }
 
 footer {
     grid-area: footer;
@@ -161,10 +153,10 @@ footer {
     body {
         --grid-whitespace: max(min(160px, calc((100% - 1024px) / 2)), 20px);
         grid-template-areas:
-            '...... v-card p-main ......'
+            '...... v-card resume ......'
             'footer footer footer footer';
         grid-template-columns: var(--grid-whitespace) 1fr 2fr var(--grid-whitespace);
     }
 
-    header, main { padding-top: 5rem; }
+    .vcard, .resume { padding-top: 5rem; }
 }

@@ -145,13 +145,7 @@ a { color: var(--clr-link); }
     box-shadow: 8px 8px 40px -10px rgba(0,0,0,.3);
 }
 
-.vcard__location {
-    background-color: var(--clr-accent-1);
-    padding: 0.35em 0.7em;
-    display: inline-flex;
-    gap: 0.5em;
-    width: max-content;
-}
+.vcard__location { gap: 0.5em; }
 
 .vcard__contact, .vcard__socials {
     display: flex;
@@ -182,12 +176,27 @@ a { color: var(--clr-link); }
     gap: 1em;
 }
 
+.section__skills {
+    list-style: "";
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding-left: 0;
+}
+
 /* Components */
 .inline-icon > svg {
     display: inline-block;
     vertical-align: -10%;
     height: 0.9em;
     fill: currentColor;
+}
+
+.item--styled {
+    display: inline-flex;
+    width: max-content;
+    background-color: var(--clr-accent-1);
+    padding: 0.35em 0.7em;
 }
 
 /* Media query for larger screen sizes */

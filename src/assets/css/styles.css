@@ -160,3 +160,11 @@ a { color: var(--clr-link); }
 
     .vcard, .resume { padding-top: 5rem; }
 }
+
+/* Media query for printing */
+@media print {
+    .vcard__avatar {
+        border: unset;
+        box-shadow: unset;
+    }
+}

@@ -1,17 +1,18 @@
 {
   "name": "resume",
-  "module": "index.ts",
+  "description": "Helen Chong's online résumé.",
+  "author": "Helen Chong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helenclx/resume.git"
+  },
   "type": "module",
   "scripts": {
     "start": "bunx eleventy --serve --quiet",
-    "build": "bunx eleventy",
-    "build-ghpages": "bunx eleventy"
+    "build": "bunx eleventy"
   },
   "devDependencies": {
     "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0"

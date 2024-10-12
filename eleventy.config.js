@@ -3,6 +3,9 @@ import { DateTime } from 'luxon';
 export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/");
     eleventyConfig.addWatchTarget("./src/assets/");
+    eleventyConfig.addPassthroughCopy({
+        "./src/assets/favicon/favicon.ico": "/favicon.ico"
+    });
 
     eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
 

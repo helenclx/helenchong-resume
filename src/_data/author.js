@@ -13,13 +13,14 @@ export const skills = [
     "WordPress",
     "Git",
     "MySQL",
-    "SQLite",
     "React",
     "Python",
     "Graphic Design",
     "Photography",
     "Adobe Photoshop",
-    "Adobe Illustrator"
+    "Adobe Illustrator",
+    "Canva",
+    "Figma"
 ];
 export const languages = [
     {

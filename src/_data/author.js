@@ -1,5 +1,5 @@
 export const name = "Helen Chong";
-export const occupation = "Full-Stack WordPress Developer";
+export const occupation = "Web Developer";
 export const location = "Malaysia";
 export const profilePic = "profilepic.avif";
 export const pronouns = "they/them or she/her";

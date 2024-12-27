@@ -5,7 +5,8 @@ export const titles = {
     languages: "Languages",
     projects: "Featured Projects",
     tech: "Technologies",
-    certifications: "Certifications"
+    certifications: "Certifications",
+    talks: "Speaking"
 };
 
 export const labels = {

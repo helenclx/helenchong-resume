@@ -3,7 +3,7 @@ export const occupation = "Web Developer";
 export const location = "Malaysia";
 export const profilePic = "profilepic.avif";
 export const pronouns = "they/them or she/her";
-export const email = "contact@helenchong.dev";
+export const email = '<span class="email-encoded">contact@helenchong<b>.nospam</b>.dev</span>';
 export const website = "https://helenchong.dev";
 export const skills = [
     "HTML",

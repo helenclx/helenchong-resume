@@ -32,7 +32,7 @@ export const languages = [
         level: "fluent"
     },
     {
-        name: "Canronese",
+        name: "Cantonese",
         level: "intermediate"
     },
     {

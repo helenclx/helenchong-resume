@@ -18,29 +18,29 @@ layout: layouts/base
         <h2 class="section__title">{{ strings.titles.experience }}</h2>
         {% set entries = collections.work %}
         {% set microformat = "p-experience" %}
-        {% include "partials/entrylist.njk" %}
+        {% include "partials/entrylist.html" %}
     </section>
 
     <section class="section" id="section-projects">
         <h2 class="section__title">{{ strings.titles.projects }}</h2>
-        {% include "partials/projects.njk" %}
+        {% include "partials/projects.html" %}
     </section>
 
     <section class="section" id="section-talks">
         <h2 class="section__title">{{ strings.titles.talks }}</h2>
-        {% include "partials/talks.njk" %}
+        {% include "partials/talks.html" %}
     </section>
 
     <section class="section" id="section-certification">
         <h2 class="section__title">{{ strings.titles.certifications }}</h2>
-        {% include "partials/certifications.njk" %}
+        {% include "partials/certifications.html" %}
     </section>
 
     <section class="section" id="section-education">
         <h2 class="section__title">{{ strings.titles.education }}</h2>
         {% set entries = collections.education %}
         {% set microformat = "p-education" %}
-        {% include "partials/entrylist.njk" %}
+        {% include "partials/entrylist.html" %}
     </section>
 
 {% if author.skills %}

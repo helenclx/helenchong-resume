@@ -3,11 +3,11 @@
 Helen Chong's résumé. Built with Eleventy.
 
 ## Run Locally
-Recommended JavaScript runtime: [Bun](https://bun.sh).
+It is recommended to use [Bun](https://bun.sh) as the JavaScript runtime for this project. If you want to use Node.js to run this project, for each terminal command and `package.json` script, replace `bun` with `npm` and `bunx` with `npx`.
 
 1. Clone this repository locally
     ```
-    git clone https://github.com/helenclx/resume.git
+    git clone https://git.helenchong.dev/helenchong/resume.git
     ```
 1. Install dependencies
     ```

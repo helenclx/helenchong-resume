@@ -1,20 +1,21 @@
 {
-  "name": "resume",
-  "description": "Helen Chong's online résumé.",
-  "author": "Helen Chong",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/helenclx/resume.git"
-  },
-  "type": "module",
-  "scripts": {
-    "start": "bunx eleventy --serve --quiet",
-    "build": "bunx eleventy"
-  },
-  "devDependencies": {
-    "@types/bun": "^1.1.11"
-  },
-  "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
-  }
+    "name": "resume",
+    "description": "Helen Chong's online résumé.",
+    "author": "Helen Chong",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/helenclx/resume.git"
+    },
+    "type": "module",
+    "scripts": {
+        "start": "bunx eleventy --serve --quiet",
+        "build": "bunx eleventy",
+        "build-action": "npx eleventy"
+    },
+    "devDependencies": {
+        "@types/bun": "^1.1.11"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^3.0.0"
+    }
 }

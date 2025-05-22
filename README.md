@@ -7,7 +7,7 @@ It is recommended to use [Bun](https://bun.sh) as the JavaScript runtime for thi
 
 1. Clone this repository locally
     ```
-    git clone https://git.helenchong.dev/helenchong/resume.git
+    git clone https://git.helenchong.dev/helenchong/helenchong-resume.git
     ```
 1. Install dependencies
     ```

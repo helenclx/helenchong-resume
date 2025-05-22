@@ -15,7 +15,7 @@ It is recommended to use [Bun](https://bun.sh) as the JavaScript runtime for thi
     ```
 1. Run the project
     ```
-    bun run start
+    bun start
     ```
 1. Open http://localhost:8080/ in your browser
 

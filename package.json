@@ -16,6 +16,6 @@
         "@types/bun": "^1.2.14"
     },
     "dependencies": {
-        "@11ty/eleventy": "^3.1.0"
+        "@11ty/eleventy": "^3.1.1"
     }
 }
